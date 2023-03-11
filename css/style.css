@@ -1,0 +1,45 @@
+.logo-img {
+  width: 140px;
+}
+
+.themeCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.drop-menu {
+  position: relative;
+}
+.drop-menu .drop-list {
+  position: absolute;
+  right: -106px;
+  top: 27px;
+  display: none;
+}
+
+.drop-menu1 {
+  position: relative;
+}
+.drop-menu1 .drop-list1 {
+  position: absolute;
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.selected {
+  background: white;
+  border-radius: 100%;
+  border: 3px solid #5fd855;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #5fd855;
+  position: absolute;
+  right: 134px;
+  top: 13px;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

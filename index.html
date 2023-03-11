@@ -6,8 +6,118 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SYS DOCS</title>
         <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        
+        <header class="sys-header bg-accent-75 sys-elevation-v2">
+            <div class="sys-container">
+              <div class="sys-grid align-i-center">
+                <div class="col-md-6">
+                  <div class="header-wrapper">
+                    <img src="./img/logo.png" alt="" class="logo-img">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="header-wrapper">
+                    <ul class="sys-navbar justify-c-center mt-2">
+                        <li><a href="#" class="text-light">Home</a></li>
+                         <li><a href="#" class="text-light">Documentation</a></li>
+                         <li><a href="#" class="text-light">Icon</a></li>
+                         <li class="drop-menu" id="themeOpen">
+                            <a href="#" class="text-light">Theme
+                                 <i class="fa-solid fa-caret-down"></i>
+                             </a>
+                             <div class="drop-list" id="themeDropdown">
+                                <div class="sys-elevation-v2  p-3 sys-grid gap-sm justify-c-between align-i-center sys-radius-lg bg-light" >
+                                    <div class="theme">
+                                        <div class="themeCircle bg-critical-90"></div>
+                                        <p class="text-center text-accent">Pink</p>
+                                    </div>
+                                    <div class="theme">
+                                        <div class="themeCircle bg-olive"></div>
+                                        <p class="text-center text-accent">Grass</p>
+                                    </div>
+                                    <div class="theme">
+                                        <div class="themeCircle bg-accent-70"></div>
+                                        <p class="text-center text-accent">Purple</p>
+                                    </div>
+                                    <div class="theme">
+                                        <div class="themeCircle bg-dark"></div>
+                                        <p class="text-center text-accent">Night</p>
+                                    </div>
+                                    <div class="selected">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                 </div>
+                             </div>
+                           
+                        </li>
+                         <li class="drop-menu1" id="versionMenu">
+                            <a href="#" class="text-light">
+                                Version  <i class="fa-solid fa-caret-down"></i>
+                                <div class="drop-list1" id="versionList">
+                                    <div class=" sys-elevation-v2 p-3 ps-3 pe-3 pt-2  justify-c-between align-i-center sys-radius-lg bg-light">
+                                       <div class="versionDropdown mb-3">
+                                            <h4 class="text-accent mb-1 h5">
+                                                Latest
+                                            </h4>
+                                            <div class="sys-grid">
+                                                <a href="" class="me-3">
+                                                    v.2.1.0
+                                                    <span class="text-accent"><h6>(2023)</h6></span>
+                                                </a>  
+                                                <a href="" class="me-3">
+                                                    v.2.1.1
+                                                    <span class="text-accent"><h6>(2023)</h6></span>
+                                                </a>  
+                                                <a href="" class="me-3">
+                                                    v.2.1.2
+                                                    <span class="text-accent"><h6>(2023)</h6></span>
+                                                </a>  
+                                            </div>
+                                       </div>
+                                       <div class="verisonDropdown">
+                                            <h4 class="text-accent mb-1 h5">
+                                                Previews
+                                            </h4>
+                                            <div class="sys-grid text-center">
+                                                <a href="" class="me-3">
+                                                    v.2.0.0
+                                                    <span class="text-accent"><h6>(2023)</h6></span>
+                                                </a>  
+                                            </div>
+                                       </div>
+                                      </div>
+                                </div>
+                               
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </header>
+         <section>
+            <div class="sys-container">
+                <div class="sys-row">
+                    <div class="col-md-6">
+                        <div class="sys-content pr-4">
+                            <h1 class="text-dark mt-3 mb-2">
+                                SYS DESIGN <br>
+                                SYSTEM
+                            </h1>
+                            <span class="sys-pin-badge badge-alert">
+                                <i>•</i> BETA Version
+                            </span>
+                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, accusamus. Cupiditate illo eius rerum ab nihil aspernatur minima laboriosam ipsa, suscipit autem, vitae error laudantium assumenda eveniet, consectetur atque et.                              
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <script src="app.js"></script>
     </body>
 </html>

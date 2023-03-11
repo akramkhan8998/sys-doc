@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
+    <body id="body">
         <header class="sys-header bg-accent-75 sys-elevation-v2">
             <div class="sys-container">
               <div class="sys-grid align-i-center">
@@ -30,24 +30,34 @@
                              <div class="drop-list" id="themeDropdown">
                                 <div class="sys-elevation-v2  p-3 sys-grid gap-sm justify-c-between align-i-center sys-radius-lg bg-light" >
                                     <div class="theme">
-                                        <div class="themeCircle bg-critical-90"></div>
+                                        <div class="themeCircle bg-critical-90" id="pink"></div>
                                         <p class="text-center text-accent">Pink</p>
+                                         <div class="selected">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
                                     </div>
                                     <div class="theme">
-                                        <div class="themeCircle bg-olive"></div>
+                                        <div class="themeCircle bg-olive"  id="grass"></div>
                                         <p class="text-center text-accent">Grass</p>
+                                         <div class="selected">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
                                     </div>
                                     <div class="theme">
-                                        <div class="themeCircle bg-accent-70"></div>
+                                        <div class="themeCircle bg-accent-70"  id="purple"></div>
                                         <p class="text-center text-accent">Purple</p>
+                                         <div class="selected">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
                                     </div>
                                     <div class="theme">
-                                        <div class="themeCircle bg-dark"></div>
-                                        <p class="text-center text-accent">Night</p>
+                                        <div class="themeCircle bg-dark" id="night"></div>
+                                        <p class="text-center text-accent" >Night</p>
+                                         <div class="selected">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
                                     </div>
-                                    <div class="selected">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
+                                   
                                  </div>
                              </div>
                            

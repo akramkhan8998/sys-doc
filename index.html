@@ -9,112 +9,124 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body id="body">
-        <header class="sys-header bg-accent-75 sys-elevation-v2">
-            <div class="sys-container">
-              <div class="sys-grid align-i-center">
-                <div class="col-md-6">
-                  <div class="header-wrapper">
-                    <img src="./img/logo.png" alt="" class="logo-img">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="header-wrapper">
-                    <ul class="sys-navbar justify-c-center mt-2">
-                        <li><a href="index.html" class="text-light">Home</a></li>
-                         <li><a href="docs.html" class="text-light">Documentation</a></li>
-                         <li><a href="#" class="text-light">Icon</a></li>
-                         <li class="drop-menu" id="themeOpen">
-                            <a href="#" class="text-light">Theme
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a>
-                             <div class="drop-list" id="themeDropdown">
-                               
-                                <div class="sys-elevation-v2  p-3 sys-grid gap-sm justify-c-between align-i-center sys-radius-lg bg-light" >
-                                    <div class="theme relative">
-                                        <div class="themeCircle bg-critical-90  sys-elevation-v2" id="pink"></div>
-                                        <p class="text-center text-accent mt-2"><b>Pink</b></p>
-                                         <div class="selected">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                    </div>
-                                    <div class="theme relative">
-                                        <div class="themeCircle bg-olive sys-elevation-v2"  id="grass"></div>
-                                        <p class="text-center text-accent mt-2"><b>Grass</b></p>
-                                         <div class="selected">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                    </div>
-                                    <div class="theme relative">
-                                        <div class="themeCircle bg-accent-70 sys-elevation-v2"  id="purple"></div>
-                                        <p class="text-center text-accent mt-2"><b>Purple</b></p>
-                                         <div class="selected">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                    </div>
-                                    <div class="theme relative">
-                                        <div class="themeCircle bg-dark sys-elevation-v2" id="night"></div>
-                                        <p class="text-center text-accent mt-2"><b>Night</b></p>
-                                         <div class="selected">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                    </div>
-                                    <div class="theme relative">
-                                        <div class="themeCircle bg-light sys-elevation-v2" id="default"></div>
-                                        <p class="text-center text-accent mt-2"><b>Default</b></p>
-                                         <div class="selected">
-                                            <i class="fa-solid fa-check"></i>
-                                        </div>
-                                    </div>
-                                 </div>
-                             </div>
-                           
-                        </li>
-                         <li class="drop-menu1" id="versionMenu">
-                            <a href="#" class="text-light">
-                                Releases  <i class="fa-solid fa-caret-down"></i>
-                                <div class="drop-list1" id="versionList">
-                                    <div class="p-3 ps-3 pe-3 pt-2  justify-c-between align-i-center sys-radius-lg bg-light">
-                                       <div class="versionDropdown mb-3">
-                                            <h4 class="text-accent mb-1 h5">
-                                                Latest
-                                            </h4>
-                                            <div class="sys-grid">
-                                                <a href="" class="me-3">
-                                                    v.2.1.0
-                                                    <span class="text-accent"><h6>(2023)</h6></span>
-                                                </a>  
-                                                <a href="" class="me-3">
-                                                    v.2.1.1
-                                                    <span class="text-accent"><h6>(2023)</h6></span>
-                                                </a>  
-                                                <a href="" class="me-3">
-                                                    v.2.1.2
-                                                    <span class="text-accent"><h6>(2023)</h6></span>
-                                                </a>  
+        <header class="sys-header bg-accent-75 sys-elevation-v2 sticky-top">
+            <div class="sys-container-lg">
+                <div class="sys-grid align-i-center">
+                    <div class="col-md-6">
+                        <div class="header-wrapper">
+                            <img src="./img/logo.png" alt="" class="logo-img">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-wrapper">
+                            <ul class="sys-navbar justify-c-center mt-2">
+                                <li><a href="index.html" class="text-light">Home</a></li>
+                                <li><a href="docs.html" class="text-light">Documentation</a></li>
+                                <li><a href="#" class="text-light">Icon</a></li>
+                                <li class="drop-menu" id="themeOpen">
+                                    <a href="#" class="text-light">🎨 Theme
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </a>
+                                    <div class="drop-list" id="themeDropdown">
+
+                                        <div
+                                            class="sys-elevation-v2  p-3 sys-grid gap-sm justify-c-between align-i-center sys-radius-lg bg-light">
+                                            <div class="theme relative">
+                                                <div class="themeCircle bg-critical-90  sys-elevation-v2" id="pink">
+                                                </div>
+                                                <p class="text-center text-accent mt-2"><b>Pink</b></p>
+                                                <div class="selected">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
                                             </div>
-                                       </div>
-                                       <div class="verisonDropdown">
-                                            <h4 class="text-accent mb-1 h5">
-                                                Previews
-                                            </h4>
-                                            <div class="sys-grid text-center">
-                                                <a href="" class="me-3">
-                                                    v.2.0.0
-                                                    <span class="text-accent"><h6>(2023)</h6></span>
-                                                </a>  
+                                            <div class="theme relative">
+                                                <div class="themeCircle bg-olive sys-elevation-v2" id="grass"></div>
+                                                <p class="text-center text-accent mt-2"><b>Grass</b></p>
+                                                <div class="selected">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
                                             </div>
-                                       </div>
-                                      </div>
-                                </div>
-                               
-                            </a>
-                        </li>
-                    </ul>
-                  </div>
+                                            <div class="theme relative">
+                                                <div class="themeCircle bg-accent-70 sys-elevation-v2" id="purple">
+                                                </div>
+                                                <p class="text-center text-accent mt-2"><b>Purple</b></p>
+                                                <div class="selected">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="theme relative">
+                                                <div class="themeCircle bg-dark sys-elevation-v2" id="night"></div>
+                                                <p class="text-center text-accent mt-2"><b>Night</b></p>
+                                                <div class="selected">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                            <div class="theme relative">
+                                                <div class="themeCircle bg-light sys-elevation-v2" id="default"></div>
+                                                <p class="text-center text-accent mt-2"><b>Default</b></p>
+                                                <div class="selected">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="drop-menu1" id="versionMenu">
+                                    <a href="#" class="text-light">
+                                        🚀 Releases <i class="fa-solid fa-caret-down"></i>
+                                        <div class="drop-list1" id="versionList">
+                                            <div
+                                                class=" sys-elevation-v2 p-3 ps-3 pe-3 pt-2  justify-c-between align-i-center sys-radius-lg bg-light">
+                                                <div class="versionDropdown mb-3">
+                                                    <h4 class="text-accent mb-1 h5">
+                                                        Latest
+                                                    </h4>
+                                                    <div class="sys-grid">
+                                                        <a href="" class="me-3">
+                                                            v.2.1.0
+                                                            <span class="text-accent">
+                                                                <h6>(2023)</h6>
+                                                            </span>
+                                                        </a>
+                                                        <a href="" class="me-3">
+                                                            v.2.1.1
+                                                            <span class="text-accent">
+                                                                <h6>(2023)</h6>
+                                                            </span>
+                                                        </a>
+                                                        <a href="" class="me-3">
+                                                            v.2.1.2
+                                                            <span class="text-accent">
+                                                                <h6>(2023)</h6>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="verisonDropdown">
+                                                    <h4 class="text-accent mb-1 h5">
+                                                        Previews
+                                                    </h4>
+                                                    <div class="sys-grid text-center">
+                                                        <a href="" class="me-3">
+                                                            v.2.0.0
+                                                            <span class="text-accent">
+                                                                <h6>(2023)</h6>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-         </header>
+        </header>
          <section class="mb-5">
             <div class="sys-container">
                 <div class="sys-row">
@@ -211,8 +223,8 @@
          </article>
          <article class="mt-4">
             <div class="sys-container">
-                <div class="sys-grid gap-sm">
-                    <img src="./img/Connect.png" alt="" class="w-30 bg-accent-60 text-center sys-radius">
+                <div class="sys-grid">
+                    <img src="./img/Connect.png" alt="" class="w-30 bg-accent-60 sys-radius">
                     <h3>
                       <strong>  SYS-CND</strong>
                     </h3>

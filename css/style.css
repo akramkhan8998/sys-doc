@@ -17,6 +17,9 @@
   top: 27px;
   display: none;
 }
+.drop-menu .drop-list .theme {
+  cursor: pointer;
+}
 
 .drop-menu1 {
   position: relative;

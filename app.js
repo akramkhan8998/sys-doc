@@ -2,18 +2,23 @@ let themeOpen = document.getElementById('themeOpen');
 let themeDropdown = document.getElementById('themeDropdown');
 themeOpen.addEventListener('click', ()=>{
     themeDropdown.classList.toggle('active');
+    versionList.classList.remove('active');
 })
 let versionMenu = document.getElementById('versionMenu');
 let versionList = document.getElementById('versionList');
 
 versionMenu.addEventListener('click',()=>{
     versionList.classList.toggle('active');
+    themeDropdown.classList.remove('active');
 })
 
 // Theme Change 
 let themeCircle = document.getElementsByClassName('themeCircle');
 let body = document.getElementById("body");
 let selected = document.getElementsByClassName('selected');
+
+selected[4].style.display = "block";
+
 
 for(let i = 0; i < themeCircle.length; i++){
     themeCircle[i].addEventListener('click', function(){
@@ -26,6 +31,8 @@ for(let i = 0; i < themeCircle.length; i++){
                     selected[1].style.display = "none";
                     selected[2].style.display = "none";
                     selected[3].style.display = "none";
+                    selected[4].style.display = "none";
+
                     break;
     
                 case "grass":
@@ -35,6 +42,8 @@ for(let i = 0; i < themeCircle.length; i++){
                     selected[1].style.display = "block";
                     selected[2].style.display = "none";
                     selected[3].style.display = "none";
+                    selected[4].style.display = "none";
+
                     break;
                 
                 case "purple":
@@ -44,6 +53,8 @@ for(let i = 0; i < themeCircle.length; i++){
                     selected[1].style.display = "none";
                     selected[2].style.display = "block";
                     selected[3].style.display = "none";
+                    selected[4].style.display = "none";
+
                     break;
     
                 case "night":
@@ -53,9 +64,20 @@ for(let i = 0; i < themeCircle.length; i++){
                     selected[1].style.display = "none";
                     selected[2].style.display = "none";
                     selected[3].style.display = "block";
+                    selected[4].style.display = "none";
+                    
                     break;
-            
-                default:
+                
+                case "default":
+                    body.style.backgroundColor = "#FFFFFF";
+                    body.style.color = "#000000";
+                    selected[0].style.display = "none";
+                    selected[1].style.display = "none";
+                    selected[2].style.display = "none";
+                    selected[3].style.display = "none";
+                    selected[4].style.display = "block";
+                
+                default:  
                     break;
             }
         }

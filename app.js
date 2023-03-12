@@ -87,10 +87,13 @@ for(let i = 0; i < themeCircle.length; i++){
 
 
 // sys tabs 
-
+let tabContent = document.getElementsByClassName('tab-content');
+for(i =0; i < tabContent.length; i++){
+    tabContent[i].style.display = "none";
+}
 function tabChange(evt, tabActive){
-    let i, tabTrigger, tabContent;
-    tabContent = document.getElementsByClassName('tab-content');
+    let i, tabTrigger;
+    
 
     for(i =0; i < tabContent.length; i++){
         tabContent[i].style.display = "none";

@@ -8,6 +8,7 @@
     <title>SYS DOCS</title>
     <link rel="stylesheet" href="https://programming-ashram.github.io/sys-design-system/css/style.css">
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
     <body id="body">
         <header class="sys-header bg-accent-75 sys-elevation-v2 sticky-top">
@@ -131,11 +132,11 @@
 
         <div class="sys-sidebar">
             <div class="sys-sidebar-menu sys-elevation-v2 sidebar-scroll">
-                <div class="sys-sidebar-head">
+                <div class="sys-sidebar-head mb-0">
                     <a href="#" id="collapseSidebar" class="no-decoration">
                         <i class="fa fa-caret-down p-2 bg-secondary-60" aria-hidden="true"></i>
                     </a>
-                    <span>SYS SIDEBAR</span>
+                    <span>SYS Docs</span>
                 </div>
                 <hr>
 
@@ -145,7 +146,7 @@
                                 onclick="tabChange(event, 'dashboard')">📁 <span>Dashboard</span></a></li>
                         <li title="Home"><a href="#Introduction" class="tabtrigers"
                                 onclick="tabChange(event, 'intro')">🔰
-                                    <span> INTRODUCTION</span></a></li>
+                                    &nbsp; <span> Introduction</span></a></li>
                         <li title="Home"><a href="#howto" class="tabtrigers"
                                 onclick="tabChange(event, 'installation')">💊
                                 <span> Installation</span></a></li>
@@ -425,6 +426,11 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- Theme Activation Message snackbar -->
+        <div class="sys-snackbar sys-elevation-v3 p-2 w-25 absolute  bg-light sys-radius-sm"></div>
 
 
         <script src="https://programming-ashram.github.io/sys-design-system/app.js"></script>

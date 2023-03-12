@@ -61,4 +61,9 @@
   height: 34.38px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.sys-snackbar {
+  bottom: 37px;
+  right: 15px;
 }/*# sourceMappingURL=style.css.map */

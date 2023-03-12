@@ -19,14 +19,70 @@ let selected = document.getElementsByClassName('selected');
 
 selected[4].style.display = "block";
 
+// snackbar 
+let snackbar = document.querySelector('.sys-snackbar');
+
+
+
+
+
 
 for(let i = 0; i < themeCircle.length; i++){
     themeCircle[i].addEventListener('click', function(){
+        setTimeout(function(){
+            if(snackbar.style.display === "block"){
+                snackbar.style.display = "none";
+            }else{
+                snackbar.style.display = "none";
+            }
+        }, 2000);
+        if(this.id === "pink"){
+            snackbar.innerHTML =`
+                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
+                <p>Now you are in ${this.id} 🌈 theme... :)</p>
+            `;
+            snackbar.style.display = "block";
+        }
+        else if(this.id === "grass"){
+            snackbar.innerHTML =`
+                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
+                <p>Now you are in ${this.id} 🌲  theme... :)</p>
+            `;
+            snackbar.style.display = "block";
+        }
+        else if(this.id === "purple"){
+            snackbar.innerHTML =`
+                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
+                <p>Now you are in ${this.id} 💧 theme... :)</p>
+            `;
+            snackbar.style.display = "block";
+        }
+        else if(this.id === "night"){
+            snackbar.innerHTML =`
+                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
+                <p>Now you are in ${this.id} 🌚 theme... :)</p>
+            `;
+            snackbar.style.display = "block";
+        } 
+        else if(this.id === "light"){
+            snackbar.innerHTML =`
+                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
+                <p>Now you are in ${this.id} 🎉 theme... :)</p>
+            `;
+            snackbar.style.display = "block";
+        }
+        else{
+            alert("DefaultTheme");
+        }
+
+
+
+        
         for(let i = 0; i < selected.length; i++){
+           
             switch (this.id) {
                 case "pink":
                     body.style.backgroundColor = "rgba(231, 0, 231, 0.9)";
-                    body.style.color = "white";
                     selected[0].style.display = "block";
                     selected[1].style.display = "none";
                     selected[2].style.display = "none";
@@ -37,7 +93,6 @@ for(let i = 0; i < themeCircle.length; i++){
     
                 case "grass":
                     body.style.backgroundColor = "#5FD855B2";
-                    body.style.color = "white";
                     selected[0].style.display = "none";
                     selected[1].style.display = "block";
                     selected[2].style.display = "none";
@@ -48,7 +103,6 @@ for(let i = 0; i < themeCircle.length; i++){
                 
                 case "purple":
                     body.style.backgroundColor = "rgba(0, 0, 209, 0.7)";
-                    body.style.color = "white";
                     selected[0].style.display = "none";
                     selected[1].style.display = "none";
                     selected[2].style.display = "block";
@@ -59,7 +113,6 @@ for(let i = 0; i < themeCircle.length; i++){
     
                 case "night":
                     body.style.backgroundColor = "#000000"
-                    body.style.color = "white";
                     selected[0].style.display = "none";
                     selected[1].style.display = "none";
                     selected[2].style.display = "none";
@@ -70,7 +123,6 @@ for(let i = 0; i < themeCircle.length; i++){
                 
                 case "default":
                     body.style.backgroundColor = "#FFFFFF";
-                    body.style.color = "#000000";
                     selected[0].style.display = "none";
                     selected[1].style.display = "none";
                     selected[2].style.display = "none";

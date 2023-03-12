@@ -127,19 +127,19 @@
                 <hr>
                 <div class="sys-sidebar-body">
                     <ul>
-                        <li title="Dashboard"><a href="#"><i class="fa fa-dashboard" aria-hidden="true"></i> <span>Dashboard</span></a></li>
-                        <li title="Home"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Introduction</span></a></li>
-                        <li title="Products"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Helpers</span></a></li>
-                        <li title="Analytic"><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Utlities</span></a></li>
-                        <li title="Schedule"><a href="#"><i class="fa fa-clock" aria-hidden="true"></i> <span>Settings</span></a></li>
-                        <li title="History"><a href="#"><i class="fa fa-history" aria-hidden="true"></i> <span>History</span></a></li>
-                        <li title="Sales"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> <span>Content</span></a></li>
-                        <li title="Message"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span>Form</span></a></li> 
-                        <li title="Notification"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i> <span>About Sys</span></a></li> 
-                        <li title="Settings"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> <span>SYS Support</span></a></li> 
-                        <li title="Logout"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Releases</span></a></li> 
-                        <li title="Logout"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>SYS team</span></a></li> 
-                        <li title="Logout"><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>SYS Feedback</span></a></li>
+                        <li title="Dashboard"><a href="#Dashboard" class="tabtrigers" onclick="tabChange(event, 'dashboard')"><i class="fa fa-dashboard" aria-hidden="true"></i> <span>Dashboard</span></a></li>
+                        <li title="Home"><a href="#Introduction" class="tabtrigers"  onclick="tabChange(event, 'intro')"><i class="fa fa-home" aria-hidden="true"></i> <span>Introduction</span></a></li>
+                        <li title="Products"><a href="#" class="tabtrigers"  onclick="tabChange(event, 'helpers')"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Helpers</span></a></li>
+                        <li title="Analytic"><a href="#" class="tabtrigers"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Utlities</span></a></li>
+                        <li title="Schedule"><a href="#" class="tabtrigers"><i class="fa fa-clock" aria-hidden="true"></i> <span>Settings</span></a></li>
+                        <li title="History"><a href="#" class="tabtrigers"><i class="fa fa-history" aria-hidden="true"></i> <span>History</span></a></li>
+                        <li title="Sales"><a href="#" class="tabtrigers"><i class="fa fa-home" aria-hidden="true"></i> <span>Content</span></a></li>
+                        <li title="Message"><a href="#" class="tabtrigers"><i class="fa fa-envelope" aria-hidden="true"></i> <span>Form</span></a></li> 
+                        <li title="Notification"><a href="#" class="tabtrigers"><i class="fa fa-bell" aria-hidden="true"></i> <span>About Sys</span></a></li> 
+                        <li title="Settings"><a href="#" class="tabtrigers"><i class="fa fa-cog" aria-hidden="true"></i> <span>SYS Support</span></a></li> 
+                        <li title="Logout"><a href="#" class="tabtrigers"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Releases</span></a></li> 
+                        <li title="Logout"><a href="#" class="tabtrigers"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>SYS team</span></a></li> 
+                        <li title="Logout"><a href="#" class="tabtrigers"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>SYS Feedback</span></a></li>
                     </ul>
                 </div>
                 <hr>
@@ -158,7 +158,15 @@
             </div>
         
             <div class="sidebar-content">
-                <h4>Side Bar Content</h4>
+                <div class="tab-content" id="dashboard">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="tab-content" id="intro">
+                    <h1>Introduction</h1>
+                </div>
+                <div class="tab-content" id="helpers">
+                    <h1>Heplers</h1>
+                </div>
             </div>
         </div>
         

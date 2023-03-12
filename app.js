@@ -84,3 +84,23 @@ for(let i = 0; i < themeCircle.length; i++){
       
     });
 }
+
+
+// sys tabs 
+
+function tabChange(evt, tabActive){
+    let i, tabTrigger, tabContent;
+    tabContent = document.getElementsByClassName('tab-content');
+
+    for(i =0; i < tabContent.length; i++){
+        tabContent[i].style.display = "none";
+    }
+
+    tabTrigger = document.getElementsByClassName('tabtrigers');
+
+    for(i = 0; i < tabTrigger.length; i++){
+        tabTrigger[i].className = tabTrigger[i].className.replace(" active", "")
+    }
+    document.getElementById(tabActive).style.display = "block";
+    evt.currentTarget.className += " active";
+}

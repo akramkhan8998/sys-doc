@@ -30,7 +30,7 @@
 }
 
 .active {
-  display: block !important;
+  display: inline !important;
 }
 
 .selected {

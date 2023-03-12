@@ -26,6 +26,8 @@
 }
 .drop-menu1 .drop-list1 {
   position: absolute;
+  top: 27px;
+  left: -63px;
   display: none;
 }
 
@@ -56,4 +58,7 @@
 
 .w-30 {
   width: 30px;
+  height: 34.38px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

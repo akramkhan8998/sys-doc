@@ -342,7 +342,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="no-decoration text-dark col-md-3">
+                            <a href="#" onclick="tabChange(event, 'button-groupComponent')" class="no-decoration text-dark col-md-3">
                                 <div class="sys-card  sys-elevation-v2 sys-radius-sm" >
                                     <div class="sys-card-head sys-radius-ts sys-radius-te overflow-hidden">
                                         <img src="./img/button-group.png" alt="" class="w-100">
@@ -357,7 +357,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="no-decoration text-dark col-md-3">
+                            <a href="#" onclick="tabChange(event, 'badgeComponent')" class="no-decoration text-dark col-md-3">
                                 <div class="sys-card sys-elevation-v2 sys-radius-sm" >
                                     <div class="sys-card-head sys-radius-ts sys-radius-te overflow-hidden">
                                         <img src="./img/badge.png" alt="" class="w-100">
@@ -372,7 +372,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="no-decoration text-dark col-md-3">
+                            <a href="#" onclick="tabChange(event, 'elevationComponent')" class="no-decoration text-dark col-md-3">
                                 <div class="sys-card sys-elevation-v2 sys-radius-sm" >
                                     <div class="sys-card-head sys-radius-ts sys-radius-te overflow-hidden">
                                         <img src="./img/elevation.png" alt="" class="w-100">
@@ -387,7 +387,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="text-dark no-decoration col-md-3">
+                            <a href="#"  onclick="tabChange(event, 'toggleComponent')" class="text-dark no-decoration col-md-3">
                                     <div class="sys-card sys-elevation-v2">
                                         <div class="sys-card-head sys-radius-ts sys-radius-te overflow-hidden">
                                             <img src="./img/toggle.png" alt="" class="w-100">
@@ -402,7 +402,7 @@
                                         </div>
                                      </div>
                             </a>
-                            <a href="#" class="text-dark no-decoration col-md-3">
+                            <a href="#"  onclick="tabChange(event, 'checkboxComponent')"  class="text-dark no-decoration col-md-3">
                                 <div class="sys-card sys-elevation-v2">
                                     <div class="sys-card-head sys-radius-ts sys-radius-te overflow-hidden">
                                         <img src="./img/checkbox.png" alt="" class="w-100">
@@ -436,47 +436,511 @@
                         Sys Button - We have Different variant buttons, its following like - Standard Button, Outline buttons, Icon buttons. it will help you to create UI to more attractive and effective.
                     </p>
 
-                    <div class="content-body mt-4">
-                        <h4>SYS-Standard Button </h4>
+                        <div class="content-body mt-4">
+                            <h4>SYS-Standard Button </h4>
+                            <p class="lead">
+                                Sys Standard Button (Fill buttons) is containing Effect - like - Default, Hover and focus, it's made your UI to more attractive. it's having easy and light weighted code.
+                            </p>
+
+                            <div class="designExample sys-grid gap-lg ">
+                                <button type="button" role="button" class="sys-btn-accent">
+                                    Sys Accent
+                                </button>
+
+                                <button type="button" role="button" class="sys-btn-alert">
+                                    Sys Alert
+                                </button>
+                                    
+                                <button type="button" role="button" class="sys-btn-dark">
+                                    Sys Dark
+                                </button>
+                                    
+                                <button type="button" role="button" class="sys-btn-critical">
+                                    Sys Critical
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-olive">
+                                    Sys Olive
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-error">
+                                    Sys Error
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-secondary">
+                                    Sys Secondary
+                                </button>
+                            </div>
+
+                            <div class="code-editor mt-4">
+                                <script src="https://gist.github.com/programmingashram/d4ad9f793ca507b33104c30eeca64079.js"></script>
+                            </div>
+                        </div>
+                        <div class="content-body mt-4">
+                            <h4>SYS-Outline Button  </h4>
+                            <p class="lead">
+                                Sys Outline Button (Border buttons) is containing Effect - like - Default, Hover and focus, it's made your UI to more attractive. it's having easy and light weighted code.
+                            </p>
+                            <div class="designExample sys-grid gap-lg ">
+                                    <button type="button" role="button" class="sys-btn-outline-accent">
+                                    Sys Accent
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-outline-alert">
+                                    Sys Alert
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-outline-dark">
+                                    Sys Dark
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-outline-critical">
+                                    Sys Critical
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-outline-olive">
+                                    Sys Olive
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-outline-error">
+                                    Sys Error
+                                </button>
+                                
+                                <button type="button" role="button" class="sys-btn-outline-secondary">
+                                    Sys secondary
+                                </button>
+                            </div>
+                            <div class="code-editor mt-4">
+                                <script src="https://gist.github.com/akramkhan8998/e0a86fe5f8316e9efaa857eed130cad8.js"></script>
+                            </div>
+                        </div>
+                        <div class="content-body mt-4">
+                            <h4>Sys Button Sizing (Large, Small)</h4>
+
+                            <div class="designExample sys-grid gap-lg mt-3 ">
+                                <button type="button" role="button" size="lg" class="sys-btn-accent">
+                                   Large Button
+                                </button>
+                                <button type="button" role="button" size="lg" class="sys-btn-outline-accent">
+                                   Large Button
+                                </button>
+                                <button type="button" role="button" size="sm" class="sys-btn-olive">
+                                   Small Button
+                                </button>
+                                <button type="button" role="button" size="sm" class="sys-btn-outline-olive">
+                                   Small Button
+                                </button>
+                            </div>
+                            <div class="code-editor mt-4">
+                                <script src="https://gist.github.com/akramkhan8998/7d30eaae21fc7ac095ecd9874ac92b6e.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="button-groupComponent">
+                    <div class="sys-container">
+                        <div class="sys-container">
+                            <h6>Button Component 🧩</h6>
+                        <h3 class="sys-title">SYS BUTTON GROUPS</h3>
                         <p class="lead">
-                            Sys Standard Button (Fill buttons) is containing Effect - like - Default, Hover and focus, it's made your UI to more attractive. it's having easy and light weighted code.
+                            Sys Button Groups - We have Different variant buttons, its following like - Standard Button, Outline buttons, Icon buttons. it will help you to create UI to more attractive and effective
                         </p>
-
-                        <div class="designExample sys-grid gap-lg ">
-                            <button type="button" role="button" class="sys-btn-accent">
-                                Sys Accent
-                            </button>
-
-                            <button type="button" role="button" class="sys-btn-alert">
-                                Sys Alert
-                            </button>
-                                
-                            <button type="button" role="button" class="sys-btn-dark">
-                                Sys Dark
-                            </button>
-                                
-                            <button type="button" role="button" class="sys-btn-critical">
-                                Sys Critical
-                            </button>
-                            
-                            <button type="button" role="button" class="sys-btn-olive">
-                                Sys Olive
-                            </button>
-                            
-                            <button type="button" role="button" class="sys-btn-error">
-                                Sys Error
-                            </button>
-                            
-                            <button type="button" role="button" class="sys-btn-secondary">
-                                Sys Secondary
-                            </button>
-                        </div>
-
-                        <div class="code-editor mt-4">
-                            <script src="https://gist.github.com/programmingashram/d4ad9f793ca507b33104c30eeca64079.js"></script>
+                            <div class="content-body mt-4">
+                                <h4>SYS-Standard Button Groups  </h4>
+                                <p class="lead">
+                                    Sys Standard Button (Fill buttons) is containing Effect - like - Default, Hover and focus, it's made your UI to more attractive. it's having easy and light weighted code.
+                                </p>
+                                <div class="designExample sys-grid gap-lg ">
+                                    <div class="sys-btn-group">
+                                        <button type="button" role="btn" class="sys-btn-accent">
+                                          Sys Accent
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-secondary">
+                                          Sys Secondary
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-alert">
+                                          Sys Alert
+                                        </button>
+                                           <button type="button" role="btn" class="sys-btn-critical">
+                                          Sys Critical
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-olive">
+                                          Sys Olive
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-error">
+                                          Sys Error
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="code-editor mt-4">
+                                    <script src="https://gist.github.com/akramkhan8998/c3277821686f056999046a815ea9daa3.js"></script>
+                                </div>
+                            </div>
+                            <div class="content-body mt-4">
+                                <h4>SYS-Outline Button Groups </h4>
+                                <p class="lead">
+                                    Sys Outline Button Groups (Border buttons) is containing Effect - like - Default, Hover and focus, it's made your UI to more attractive. it's having easy and light weighted code.
+                                </p>   
+                                <div class="designExample sys-grid gap-lg ">
+                                    <div class="sys-btn-group">
+                                        <button type="button" role="btn" class="sys-btn-outline-accent">
+                                          Sys Accent
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-outline-secondary">
+                                          Sys Secondary
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-outline-alert">
+                                          Sys Alert
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-outline-olive">
+                                          Sys Olive
+                                        </button>
+                                        <button type="button" role="btn" class="sys-btn-outline-error">
+                                          Sys error
+                                        </button>
+                                      </div>
+                                </div>
+                                <div class="code-editor mt-4">
+                                    <script src="https://gist.github.com/akramkhan8998/62cc2e36ac8103f774d3151f934c6e39.js"></script>
+                                </div>
+                            </div>
+                            <div class="content-body mt-4">
+                                <h4>Sys Button Groups Sizing </h4>
+                                <div class="designExample sys-grid gap-lg mt-4">
+                                    <div class="sys-btn-group ">
+                                        <button type="button" role="btn" size="lg" class="sys-btn-accent">
+                                          Sys Button
+                                        </button>
+                                        <button type="button" role="btn" size="lg" class="sys-btn-secondary">
+                                          Sys Button
+                                        </button>
+                                        <button type="button" role="btn" size="lg" class="sys-btn-alert">
+                                          Sys Button
+                                        </button>
+                                     </div>
+                                     
+                                     <div class="sys-btn-group">
+                                        <button type="button" role="btn" size="sm" class="sys-btn-outline-accent">
+                                          Sys Button
+                                        </button>
+                                        <button type="button" role="btn" size="sm" class="sys-btn-outline-secondary">
+                                          Sys Button
+                                        </button>
+                                        <button type="button" role="btn" size="sm" class="sys-btn-outline-alert">
+                                          Sys Button
+                                        </button>
+                                     </div>
+                                </div>
+                                <div class="code-editor mt-4">
+                                    <script src="https://gist.github.com/akramkhan8998/1f724d34656f7bda5dd23973700d0393.js"></script>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="tab-content" id="badgeComponent">
+                    <div class="sys-container">
+                        <div class="sys-container">
+                            <h6>Badge Component 🧩</h6>
+                            <h3 class="sys-title">SYS BADGE</h3>
+                            <p class="lead">
+                                Sys Badge- We have Different variant badge, its following like - Standard badge, Outline badge, pin badge. it will help you to create UI to more attractive and effective.
+                            </p>
+                                <div class="content-body mt-4">
+                                    <h4>SYS-Standard Badge </h4>
+                                    <p class="lead">
+                                        Sys Standard Badge 
+                                    </p>
+                                    <div class="designExample sys-grid gap-lg ">
+                                        <span class="sys-standard-badge badge-accent">
+                                            Sys Badge
+                                        </span>
+                                        <span class="sys-standard-badge badge-alert">
+                                            Sys Badge
+                                        </span>
+                                        <span class="sys-standard-badge badge-olive">
+                                            Sys Badge
+                                        </span>
+                                        <span class="sys-standard-badge badge-error">
+                                            Sys Badge
+                                        </span>
+                                        <span class="sys-standard-badge badge-secondary">
+                                            Sys Badge
+                                        </span>
+                                    </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/23093023171812d0b428f85a6c64ca11.js"></script>
+                                    </div>
+                                </div>
+                                <div class="content-body mt-4">
+                                    <h4>SYS Standard Outline badge   </h4>
+                                    <p class="lead">
+                                        Sys Outline Button Groups (Border buttons) is containing Effect - like - Default, Hover and focus, it's made your UI to more attractive. it's having easy and light weighted code.
+                                    </p>
+                                    <div class="designExample sys-grid gap-lg ">
+                                        <span class="sys-outline-badge badge-accent">
+                                            Sys Badge
+                                        </span> 
+                                        <span class="sys-outline-badge badge-alert">
+                                            Sys Badge
+                                        </span> 
+                                        <span class="sys-outline-badge badge-olive">
+                                            Sys Badge
+                                        </span> 
+                                        <span class="sys-outline-badge badge-error">
+                                            Sys Badge
+                                        </span> 
+                                        <span class="sys-outline-badge badge-secondary">
+                                            Sys Badge
+                                        </span>
+                                    </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/d252661704e0e9cd28fdabe86d5b9f91.js"></script>
+                                    </div>
+                                </div>
+                                <div class="content-body mt-4">
+                                    <h4>Sys Pin Standard Badge   </h4>
+                                    
+                                    <div class="designExample sys-grid gap-lg mt-4 ">
+                                        <span class="sys-pin-badge badge-accent">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-badge badge-alert">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-badge badge-olive">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-badge badge-error">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-badge badge-secondary">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                    </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/5bdc236497b15d18a25f40a72a99d973.js"></script>
+                                    </div>
+                                </div>
+                                <div class="content-body mt-4">
+                                    <h4>Sys Pin Outline Badge </h4>
+                                    
+                                    <div class="designExample sys-grid gap-lg mt-4 ">
+                                        <span class="sys-pin-outline-badge badge-accent">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-outline-badge badge-alert">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-outline-badge badge-olive">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-outline-badge badge-error">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                        <span class="sys-pin-outline-badge badge-secondary">
+                                            <i>•</i> Sys Badge
+                                        </span>
+                                    </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/a88931b160a2e997750bff2e3cb6666d.js"></script>
+                                    </div>
+                                </div>
+                        </div>       
                     </div>
+                </div>
+                <div class="tab-content" id="elevationComponent">
+                    <div class="sys-container">
+                        <div class="sys-container">
+                            <h6>  SYS ELEVATION 🧩</h6>
+                            <h3 class="sys-title">  SYS ELEVATION</h3>
+                            <p class="lead">
+                                Sys Elevation- We have Different variant elevations, its following like - Standard elevations and with shadow elevations.
+                            </p>
+                                <div class="content-body mt-4">
+                                    <h4>SYS-Standard Badge </h4>
+                                    <p class="lead">
+                                        Sys Standard Badge 
+                                    </p>
+                                    <div class="designExample sys-grid gap-lg ">
+                                        <div class="sys-elevation">
+                                            <h1 class="elevation-title">
+                                              Elevation
+                                            </h1>
+                                            <p class="elevation-content">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet, tempore odit,
+                                            </p>
+                                          </div>
+                                          <div class="sys-elevation-v1">
+                                            <h1 class="elevation-title">
+                                              Elevation
+                                            </h1>
+                                            <p class="elevation-content">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet, tempore odit,
+                                            </p>
+                                          </div>
+                                          <div class="sys-elevation-v2">
+                                            <h1 class="elevation-title">
+                                              Elevation
+                                            </h1>
+                                            <p class="elevation-content">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet, tempore odit,
+                                            </p>
+                                          </div>
+                                          <div class="sys-elevation-v3">
+                                            <h1 class="elevation-title">
+                                              Elevation
+                                            </h1>
+                                            <p class="elevation-content">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet, tempore odit,
+                                            </p>
+                                          </div>  
+                                          <div class="sys-elevation-v4">
+                                            <h1 class="elevation-title">
+                                              Elevation
+                                            </h1>
+                                            <p class="elevation-content">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet, tempore odit,
+                                            </p>
+                                          </div>
+                                          <div class="sys-elevation-v5">
+                                            <h1 class="elevation-title">
+                                              Elevation
+                                            </h1>
+                                            <p class="elevation-content">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet, tempore odit,
+                                            </p>
+                                          </div>
+                                    </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/aa9e59f769de6e35b0dd3bc72970fecb.js"></script>
+                                    </div>
+                                </div>
+                        </div>       
+                    </div>
+                </div>
+                <div class="tab-content" id="toggleComponent">
+                    <div class="sys-container">
+                        <div class="sys-container">
+                            <h6>   SYS TOGGLE SWITCHES 🧩</h6>
+                            <h3 class="sys-title"> SYS TOGGLE SWITCHES</h3>
+                            <p class="lead">
+                                Sys Toggle Switches - We have Different variant switches.
+                            </p>
+                                <div class="content-body mt-4">
+                                    <div class="sys-switch-accent">
+                                        <label class="sys-switch-label">
+                                          <input type="checkbox" checked>
+                                          <span class="sys-slider round"></span>
+                                        </label>    
+                                     </div>
+                                     <div class="sys-switch-alert">
+                                        <label class="sys-switch-label">
+                                          <input type="checkbox" checked>
+                                          <span class="sys-slider round"></span>
+                                        </label>    
+                                     </div>
+                                      <div class="sys-switch-olive">
+                                        <label class="sys-switch-label">
+                                          <input type="checkbox" checked>
+                                          <span class="sys-slider round"></span>
+                                        </label>    
+                                     </div>
+                                      <div class="sys-switch-error">
+                                        <label class="sys-switch-label">
+                                          <input type="checkbox" checked>
+                                          <span class="sys-slider round"></span>
+                                        </label>    
+                                     </div>
+                                      <div class="sys-switch-secondary">
+                                        <label class="sys-switch-label">
+                                          <input type="checkbox" checked>
+                                          <span class="sys-slider round"></span>
+                                        </label>    
+                                     </div>
+                                </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/ee612ee1b844b5567d032ca835e334c6.js"></script>
+                                    </div>
+                                </div>
+                        </div>       
+                </div>
+                <div class="tab-content" id="checkboxComponent">
+                    <div class="sys-container">
+                        <div class="sys-container">
+                            <h6>   COMPONENTS 🧩</h6>
+                            <h3 class="sys-title">  SYSCHECKBOX</h3>
+                            <p class="lead">
+                                Sys Checkbox - We have Different variant checkboxes like - Outline checkbox, fill mode checkbox. we have sizing in our checkboxes   (lg, sm)
+                            </p>
+                            <div class="designExample sys-grid gap-lg ">
+                                <label class="sys-checkbox checkbox-accent" size="lg">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                    Checkbox
+                                  </label>
+                                  <label class="sys-checkbox checkbox-alert" size="lg">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                    Checkbox
+                                  </label>
+                                  <label class="sys-checkbox checkbox-olive" size="lg">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                    Checkbox
+                                  </label>
+                                  <label class="sys-checkbox checkbox-error" size="lg">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                    Checkbox
+                                  </label>
+                                  <label class="sys-checkbox checkbox-secondary" size="lg">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                    Checkbox
+                                  </label>
+                            </div>
+                            <div class="code-editor mt-4">
+                                <script src="https://gist.github.com/akramkhan8998/27da794485e07342915ea50f12e1baed.js"></script>
+                            </div>
+                             </div>
+                             <div class="content-body mt-4">
+                                <h4>SYS Outline Checkbox </h4>
+                                <p class="lead">
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content
+                                </p>  
+                                <div class="content-body mt-4">
+                                    <label class="sys-outline-checkbox checkbox-accent" size="lg">
+                                        <input type="checkbox" >
+                                        <span class="checkmark"></span>
+                                        Checkbox
+                                      </label>
+                                      <label class="sys-outline-checkbox checkbox-alert" size="lg">
+                                        <input type="checkbox" >
+                                        <span class="checkmark"></span>
+                                        Checkbox
+                                      </label>
+                                      <label class="sys-outline-checkbox checkbox-olive" size="lg">
+                                        <input type="checkbox" >
+                                        <span class="checkmark"></span>
+                                        Checkbox
+                                      </label>
+                                      <label class="sys-outline-checkbox checkbox-error" size="lg">
+                                        <input type="checkbox" >
+                                        <span class="checkmark"></span>
+                                        Checkbox
+                                      </label>
+                                      <label class="sys-outline-checkbox checkbox-secondary" size="lg">
+                                        <input type="checkbox" >
+                                        <span class="checkmark"></span>
+                                        Checkbox
+                                      </label>
+                                </div>
+                                    <div class="code-editor mt-4">
+                                        <script src="https://gist.github.com/akramkhan8998/8ca25d4b8bbf80860308d52de48cadc8.js"></script>
+                                    </div> 
+                            </div>
+                        </div>       
                 </div>
             </div>
             <!-- Sidebar Content Closing -->

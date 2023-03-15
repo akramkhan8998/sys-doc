@@ -13,7 +13,7 @@
 }
 .drop-menu .drop-list {
   position: absolute;
-  right: -106px;
+  right: 0;
   top: 27px;
   display: none;
 }

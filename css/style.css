@@ -52,8 +52,8 @@
 
 .sys-card-head img {
   height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .w-30 {

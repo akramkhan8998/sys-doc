@@ -47,7 +47,7 @@
 .sys-card-head{
     img{
       height: 160px;
-      object-fit: contain;
+      object-fit: cover;
     }
 }
 .w-30{
@@ -55,8 +55,71 @@
     height: 34.38px;
     object-fit: cover;
 }
+.mobileBar{
+    i{
+        display: none;
+    }
+}
 
-.sys-snackbar{
-    bottom: 37px;
-    right: 15px;
+@media(max-width: 767px){
+    .show{
+        display: block !important;
+    }
+    .sys-grid{
+        flex-wrap: wrap;
+    }
+    .col-md-6, .col-md-9{
+        width: 100% !important;
+    }
+    .sys-header{
+        .logo-img {
+            width: 80px;
+        }
+        #themeDropdown{
+            .sys-grid{
+                flex-wrap: nowrap;
+            }
+        }
+        #versionList{
+            .sys-grid{
+                flex-wrap: nowrap;
+            }
+        }
+        .sys-grid{
+            flex-wrap: wrap;
+            .mobileBar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    display: block;
+                }
+            }
+            .mobileMenu{
+                display: none;
+                .sys-navbar{
+                    display:block;
+                }
+            }
+        }
+       
+    }
+    .sys-sidebar{
+        overflow: hidden;
+    }
+    .sys-sidebar .sidebar-collapse ~ .sidebar-content {
+        margin-left: 37px;
+    }
+    h2, h3{
+        font-size: 1.2rem;
+    }
+    .content-body{
+        .sys-grid{
+            flex-wrap: wrap;
+            .col-md-3{
+                width: 100%;
+            }
+        }
+    }
+
 }

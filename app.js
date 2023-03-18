@@ -17,15 +17,10 @@ let themeCircle = document.getElementsByClassName('themeCircle');
 let body = document.getElementById("body");
 let selected = document.getElementsByClassName('selected');
 
-selected[4].style.display = "block";
+selected[1].style.display = "block";
 
 // snackbar 
 let snackbar = document.querySelector('.sys-snackbar');
-
-
-
-
-
 
 for(let i = 0; i < themeCircle.length; i++){
     themeCircle[i].addEventListener('click', function(){
@@ -36,43 +31,28 @@ for(let i = 0; i < themeCircle.length; i++){
                 snackbar.style.display = "none";
             }
         }, 2000);
-        if(this.id === "pink"){
+        if(this.id === "night"){
             snackbar.innerHTML =`
-                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
-                <p>Now you are in ${this.id} 🌈 theme... :)</p>
-            `;
-            snackbar.style.display = "block";
-        }
-        else if(this.id === "grass"){
-            snackbar.innerHTML =`
-                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
-                <p>Now you are in ${this.id} 🌲  theme... :)</p>
-            `;
-            snackbar.style.display = "block";
-        }
-        else if(this.id === "purple"){
-            snackbar.innerHTML =`
-                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
-                <p>Now you are in ${this.id} 💧 theme... :)</p>
-            `;
-            snackbar.style.display = "block";
-        }
-        else if(this.id === "night"){
-            snackbar.innerHTML =`
-                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
-                <p>Now you are in ${this.id} 🌚 theme... :)</p>
-            `;
-            snackbar.style.display = "block";
-        } 
-        else if(this.id === "light"){
-            snackbar.innerHTML =`
-                <h6 class='mb-1'>Theme activation message!!!</h6 class='mb-1'>
-                <p>Now you are in ${this.id} 🎉 theme... :)</p>
+            <div class="snackbar-head">
+                <i>🎉</i>
+                <h1 class="snackbar-title">
+                You are in ${this.id} 🌚 theme... :)
+                </h1>
+            </div>
+               
             `;
             snackbar.style.display = "block";
         }
         else{
-            alert("DefaultTheme");
+            snackbar.innerHTML =`
+            <div class="snackbar-head">
+                <i>🎉</i>
+                <h1 class="snackbar-title">
+                You are in Default  theme... :)
+                </h1>
+            </div>
+            `;
+            snackbar.style.display = "block";
         }
 
 
@@ -81,53 +61,17 @@ for(let i = 0; i < themeCircle.length; i++){
         for(let i = 0; i < selected.length; i++){
            
             switch (this.id) {
-                case "pink":
-                    body.style.backgroundColor = "rgba(231, 0, 231, 0.9)";
+                case "night":
+                    body.classList.add("dark-theme");
                     selected[0].style.display = "block";
                     selected[1].style.display = "none";
-                    selected[2].style.display = "none";
-                    selected[3].style.display = "none";
-                    selected[4].style.display = "none";
-
-                    break;
-    
-                case "grass":
-                    body.style.backgroundColor = "#5FD855B2";
-                    selected[0].style.display = "none";
-                    selected[1].style.display = "block";
-                    selected[2].style.display = "none";
-                    selected[3].style.display = "none";
-                    selected[4].style.display = "none";
-
-                    break;
-                
-                case "purple":
-                    body.style.backgroundColor = "rgba(0, 0, 209, 0.7)";
-                    selected[0].style.display = "none";
-                    selected[1].style.display = "none";
-                    selected[2].style.display = "block";
-                    selected[3].style.display = "none";
-                    selected[4].style.display = "none";
-
-                    break;
-    
-                case "night":
-                    body.style.backgroundColor = "#000000"
-                    selected[0].style.display = "none";
-                    selected[1].style.display = "none";
-                    selected[2].style.display = "none";
-                    selected[3].style.display = "block";
-                    selected[4].style.display = "none";
                     
                     break;
                 
                 case "default":
-                    body.style.backgroundColor = "#FFFFFF";
+                    body.classList.remove("dark-theme");
                     selected[0].style.display = "none";
-                    selected[1].style.display = "none";
-                    selected[2].style.display = "none";
-                    selected[3].style.display = "none";
-                    selected[4].style.display = "block";
+                    selected[1].style.display = "block";
                 
                 default:  
                     break;
@@ -159,3 +103,11 @@ function tabChange(evt, tabActive){
     document.getElementById(tabActive).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
+let menu = document.getElementById('menu');
+let menuTrigger = document.getElementById('menuTrigger');
+
+menuTrigger.addEventListener('click', function(){
+    menu.classList.toggle("show");
+})

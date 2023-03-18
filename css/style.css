@@ -52,8 +52,8 @@
 
 .sys-card-head img {
   height: 160px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .w-30 {
@@ -63,7 +63,59 @@
      object-fit: cover;
 }
 
-.sys-snackbar {
-  bottom: 37px;
-  right: 15px;
+.mobileBar i {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .show {
+    display: block !important;
+  }
+  .sys-grid {
+    flex-wrap: wrap;
+  }
+  .col-md-6, .col-md-9 {
+    width: 100% !important;
+  }
+  .sys-header .logo-img {
+    width: 80px;
+  }
+  .sys-header #themeDropdown .sys-grid {
+    flex-wrap: nowrap;
+  }
+  .sys-header #versionList .sys-grid {
+    flex-wrap: nowrap;
+  }
+  .sys-header .sys-grid {
+    flex-wrap: wrap;
+  }
+  .sys-header .sys-grid .mobileBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sys-header .sys-grid .mobileBar i {
+    display: block;
+  }
+  .sys-header .sys-grid .mobileMenu {
+    display: none;
+  }
+  .sys-header .sys-grid .mobileMenu .sys-navbar {
+    display: block;
+  }
+  .sys-sidebar {
+    overflow: hidden;
+  }
+  .sys-sidebar .sidebar-collapse ~ .sidebar-content {
+    margin-left: 37px;
+  }
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+  .content-body .sys-grid {
+    flex-wrap: wrap;
+  }
+  .content-body .sys-grid .col-md-3 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
